@@ -1,0 +1,90 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+info using npm@1.1.18
+info using node@v0.6.14
+verbose /usr/local/bin/node node symlink
+verbose config file /Users/tonydewan/.npmrc
+verbose config file /usr/local/etc/npmrc
+verbose config file /usr/local/lib/node_modules/npm/npmrc
+verbose caching /Users/tonydewan/repos/tb-test/tuberculosis/package.json
+verbose loadDefaults tuberculosis@0.0.1
+verbose readDependencies: using package.json deps
+verbose where, deps [ '/Users/tonydewan/repos/tb-test/tuberculosis',
+verbose where, deps   [ 'titanium-backbone', 'titanium-backbone-ks' ] ]
+verbose from cache /Users/tonydewan/repos/tb-test/tuberculosis/package.json
+info preinstall tuberculosis@0.0.1
+verbose caching /Users/tonydewan/repos/tb-test/tuberculosis/node_modules/stitch-up/package.json
+verbose loadDefaults stitch-up@0.3.0
+verbose caching /Users/tonydewan/repos/tb-test/tuberculosis/node_modules/titanium-backbone/package.json
+verbose caching /Users/tonydewan/repos/tb-test/tuberculosis/node_modules/titanium-backbone-ks/package.json
+verbose from cache /Users/tonydewan/repos/tb-test/tuberculosis/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /Users/tonydewan/repos/tb-test/tuberculosis/node_modules/stitch-up/package.json
+verbose from cache /Users/tonydewan/repos/tb-test/tuberculosis/node_modules/titanium-backbone/package.json
+verbose from cache /Users/tonydewan/repos/tb-test/tuberculosis/node_modules/titanium-backbone-ks/package.json
+verbose already installed in /Users/tonydewan/repos/tb-test/tuberculosis skipping titanium-backbone-ks@0.0.x
+verbose already installed in /Users/tonydewan/repos/tb-test/tuberculosis skipping titanium-backbone@0.0.x
+silly resolved []
+info build /Users/tonydewan/repos/tb-test/tuberculosis
+verbose from cache /Users/tonydewan/repos/tb-test/tuberculosis/package.json
+verbose linkStuff [ false, false, false, '/Users/tonydewan/repos/tb-test' ]
+info linkStuff tuberculosis@0.0.1
+verbose linkBins tuberculosis@0.0.1
+verbose linkMans tuberculosis@0.0.1
+verbose rebuildBundles tuberculosis@0.0.1
+verbose rebuildBundles [ '.bin',
+verbose rebuildBundles   'stitch-up',
+verbose rebuildBundles   'titanium-backbone',
+verbose rebuildBundles   'titanium-backbone-ks' ]
+verbose rebuild bundle /Users/tonydewan/repos/tb-test/tuberculosis/node_modules/stitch-up
+info build /Users/tonydewan/repos/tb-test/tuberculosis/node_modules/stitch-up
+verbose from cache /Users/tonydewan/repos/tb-test/tuberculosis/node_modules/stitch-up/package.json
+info preinstall stitch-up@0.3.0
+verbose linkStuff [ false,
+verbose linkStuff   false,
+verbose linkStuff   false,
+verbose linkStuff   '/Users/tonydewan/repos/tb-test/tuberculosis/node_modules' ]
+info linkStuff stitch-up@0.3.0
+verbose linkBins stitch-up@0.3.0
+verbose linkMans stitch-up@0.3.0
+verbose rebuildBundles stitch-up@0.3.0
+verbose rebuildBundles [ '.bin',
+verbose rebuildBundles   'async',
+verbose rebuildBundles   'coffee-script',
+verbose rebuildBundles   'jade',
+verbose rebuildBundles   'node-markdown',
+verbose rebuildBundles   'npm',
+verbose rebuildBundles   'stitch',
+verbose rebuildBundles   'underscore',
+verbose rebuildBundles   'wrench' ]
+info install stitch-up@0.3.0
+info postinstall stitch-up@0.3.0
+info install tuberculosis@0.0.1
+verbose unsafe-perm in lifecycle true
+silly exec sh "-c" "cake build"
+silly spawning [ 'sh',
+silly spawning   [ '-c', 'cake build' ],
+silly spawning   '/Users/tonydewan/repos/tb-test/tuberculosis' ]
+info tuberculosis@0.0.1 Failed to exec install script
+ERR! tuberculosis@0.0.1 install: `cake build`
+ERR! `sh "-c" "cake build"` failed with 1
+ERR! 
+ERR! Failed at the tuberculosis@0.0.1 install script.
+ERR! This is most likely a problem with the tuberculosis package,
+ERR! not with npm itself.
+ERR! Tell the author that this fails on your system:
+ERR!     cake build
+ERR! You can get their info via:
+ERR!     npm owner ls tuberculosis
+ERR! There is likely additional logging output above.
+ERR! 
+ERR! System Darwin 11.3.0
+ERR! command "node" "/usr/local/bin/npm" "install"
+ERR! cwd /Users/tonydewan/repos/tb-test/tuberculosis
+ERR! node -v v0.6.14
+ERR! npm -v 1.1.18
+ERR! code ELIFECYCLE
+ERR! message tuberculosis@0.0.1 install: `cake build`
+ERR! message `sh "-c" "cake build"` failed with 1
+ERR! errno {}
+verbose exit [ 1, true ]
